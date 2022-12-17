@@ -1,0 +1,6 @@
+/* Write your CSS here */
+.team-matches-container {
+  background-image: linear-gradient(to bottom, #a4261d, #d91c1f, #0f172a);
+  height: 100vh;
+  padding-top: 10px;
+}
