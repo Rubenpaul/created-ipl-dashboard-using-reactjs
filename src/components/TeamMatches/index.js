@@ -2,6 +2,8 @@
 import './index.css'
 import {Component} from 'react'
 
+import LatestMatch from '../LatestMatch'
+
 class TeamMatches extends Component {
   state = {teamDetails: {}}
 
@@ -55,10 +57,11 @@ class TeamMatches extends Component {
 
   render() {
     const {teamDetails} = this.state
-    console.log(teamDetails)
+    const {teamBannerUrl, latestMatchDetails, recentMatches} = teamDetails
     return (
       <div className="team-matches-container">
-        <h1>Hello World</h1>
+        <img src={teamBannerUrl} alt="team banner" className="banner-image" />
+        <LatestMatch latestMatchDetails={latestMatchDetails} />
       </div>
     )
   }
